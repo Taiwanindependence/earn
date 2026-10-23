@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>投資方式及管道介紹</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <h1>錢放在哪裡，<br>風險就跟到哪裡</h1>
+      <p class="lead">從存款到加密貨幣，每種投資方式的報酬、風險與門檻都不同。先認識它們，再看看在台灣可以透過哪些管道買到。</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="methods" aria-labelledby="methods-title">
+      <h2 id="methods-title">投資方式：由低風險到高風險</h2>
+      <p class="hint">點選任一項目，右側會顯示說明，下方的管道表也會跟著標示出哪裡買得到。</p>
+
+      <div class="split">
+        <ul class="ladder" id="ladder" aria-label="投資方式清單"></ul>
+
+        <article class="detail" id="detail" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section id="indices-section" aria-labelledby="indices-title">
+      <h2 id="indices-title">全球主要指數</h2>
+      <p class="hint">指數是衡量一個市場整體表現的尺。新聞常說的「美股大漲」「日股收黑」，指的多半就是下列指數。成分股與編製規則會調整，實際內容以編製機構公告為準。</p>
+      <div class="filters" id="index-filters" role="group" aria-label="依地區篩選指數"></div>
+      <div class="indices" id="indices"></div>
+
+      <h3 class="note-title">看指數前先懂三件事</h3>
+      <dl class="rules">
+        <div>
+          <dt>市值加權與價格加權</dt>
+          <dd>市值加權依公司市值大小決定影響力；價格加權只看股價高低，股價高的公司影響較大，例如道瓊工業指數與日經 225。</dd>
+        </div>
+        <div>
+          <dt>價格指數與報酬指數</dt>
+          <dd>多數新聞引用的是只計價格的指數。總報酬指數把股利也算進去，長期下來差距可能不小。</dd>
+        </div>
+        <div>
+          <dt>指數不能直接買</dt>
+          <dd>指數只是一把尺。想參與它的漲跌，可以透過追蹤該指數的 ETF 或基金。</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="channels-section" aria-labelledby="channels-title">
+      <h2 id="channels-title">投資管道：去哪裡買</h2>
+      <p class="hint" id="channel-hint">目前顯示全部管道。選一種投資方式後，可買到該項目的管道會被標示出來。</p>
+      <div class="channels" id="channels"></div>
+    </section>
+
+    <section id="principles" aria-labelledby="principles-title">
+      <h2 id="principles-title">開始之前的三個原則</h2>
+      <dl class="rules">
+        <div>
+          <dt>只用閒錢</dt>
+          <dd>先備好 3 到 6 個月的生活費，再把不急用的錢拿去投資。</dd>
+        </div>
+        <div>
+          <dt>不要全押一處</dt>
+          <dd>把資金分散在不同類型的資產，單一項目下跌時，整體不至於大傷。</dd>
+        </div>
+        <div>
+          <dt>看懂再買</dt>
+          <dd>說不出它怎麼賺錢、會怎麼賠錢的商品，先不要碰。</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      本頁為教學用途的一般性介紹，不構成投資建議。投資有賺有賠，申購前請詳閱公開說明書與各項費用。
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
